@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         int n1 = Integer.parseInt(ed1.getText().toString());
         int n2 = Integer.parseInt(ed2.getText().toString());
 
-        int nAlreatorio = (int) (Math.random() * n2) + n1;
-        resultado.setText(nAlreatorio);
+        int nAlreatorio = (int) (Math.random() * (n2-n1+1) + n1);
+        resultado.setText(String.valueOf(nAlreatorio));
     }
 }
